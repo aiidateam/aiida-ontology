@@ -12,4 +12,4 @@ in the [Web Ontology Language](https://www.w3.org/OWL/) (OWL).
 In order to edit or visualize the ontology, open the [aiida-ontology.rdf](aiida-ontology.rdf) in an ontology editor,
 such as [Protégé](https://protege.stanford.edu/) or [WebProtégé](http://webprotege.stanford.edu/).
  
-
+You may also consider [this short tutorial](https://medium.com/@vindulajayawardana/ontology-generation-and-visualization-with-prot%C3%A9g%C3%A9-6df0af9955e0) on generating and visualizing ontologies with Protégé.
