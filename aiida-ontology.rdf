@@ -124,7 +124,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R7MwzEIpe0XJGsVJyZW2kQ8">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
-        <rdfs:label>StructureData</rdfs:label>
+        <rdfs:label>Structure</rdfs:label>
     </owl:Class>
     
 
@@ -133,7 +133,7 @@
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/R7hmVtJRh9l5vU2GQxWcqtY">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
-        <rdfs:label>ParameterData</rdfs:label>
+        <rdfs:label>Parameter</rdfs:label>
     </owl:Class>
     
 
@@ -171,19 +171,7 @@
     <!-- http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs -->
 
     <owl:Class rdf:about="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCpudtJrd8L87tlpsWbDg3J"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R7pdXmoLWrjuyX27AZDKrap"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R9cbtFrOrlDAvadAJmGcKom"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Action"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RB6Vt1DfuN4mcRpdJq08Wsh"/>
@@ -205,29 +193,42 @@
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#PASS"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkCalculation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label>Data</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#ArrayData -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA# -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#ArrayData">
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
+        <rdfs:label>Code</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Code -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Action -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Code">
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Action">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCpudtJrd8L87tlpsWbDg3J"/>
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Array -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Array">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
+        <rdfs:label>Array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#FunctionCalculation -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#FunctionCalculation">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
     </owl:Class>
     
 
@@ -241,60 +242,51 @@
                 <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RCpudtJrd8L87tlpsWbDg3J"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Group</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunCalculation -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#JobCalculation -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunCalculation">
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#JobCalculation">
         <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunFunctionCalculation -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkChain -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunFunctionCalculation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunCalculation"/>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkChain">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Workflow"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunJobCalculation -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkFunction -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunJobCalculation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunCalculation"/>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkFunction">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Workflow"/>
     </owl:Class>
     
 
 
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkCalculation -->
+    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Workflow -->
 
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkCalculation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Workflow">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R9cbtFrOrlDAvadAJmGcKom"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RnPpN4lketRP33tkyMXu9s"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RUN"/>
-                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#RunCalculation"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/RIp8FDGgpQT2Jsf8HmZJCs"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkChainCalculation -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkChainCalculation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkCalculation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkFunctionCalculation -->
-
-    <owl:Class rdf:about="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkFunctionCalculation">
-        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/project/fKUHB6L80XyDaWs0nKbA#WorkCalculation"/>
     </owl:Class>
 </rdf:RDF>
 
